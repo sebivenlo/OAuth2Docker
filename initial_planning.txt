@@ -1,0 +1,13 @@
+The following sums up the motivation and goal of our OAuth2 workshop. It shall describe that users
+may learn during our workshop and how we plan to reach those learning goals.
+
+Learning goals:
+
+- Let students know about OAuth2, especially the reason and main concept
+- Let students know about real life use cases of OAuth2 
+- Let students know about OAuth2 in a practical approach by letting them 
+  access an OAuth2 server to authenticate a certain app
+- Let students know about the archictecture of the previously mentioned app
+  and explain what just happened in the background
+
+
