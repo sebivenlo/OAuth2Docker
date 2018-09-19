@@ -1,0 +1,5 @@
+docker build --tag=nameofapp .
+docker run -p 18080:8080 -t -i nameofapp
+
+To test:
+curl http://localhost:18080/fancywebserver/myresource
