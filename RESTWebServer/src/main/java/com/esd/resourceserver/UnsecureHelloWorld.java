@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
  * Root resource (exposed at "unsecurehelloworld" path)
  */
 @Path("unsecurehelloworld")
-public class Price {
+public class UnsecureHelloWorld {
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent
