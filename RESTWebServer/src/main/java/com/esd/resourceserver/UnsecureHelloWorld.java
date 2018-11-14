@@ -6,10 +6,10 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- * Root resource (exposed at "myresource" path)
+ * Root resource (exposed at "unsecurehelloworld" path)
  */
-@Path("myresource")
-public class MyResource {
+@Path("unsecurehelloworld")
+public class Price {
 
     /**
      * Method handling HTTP GET requests. The returned object will be sent
@@ -20,6 +20,6 @@ public class MyResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getIt() {
-        return "Got it!";
+        return "Hello World! I am completely unsecure!\n";
     }
 }
