@@ -4,7 +4,7 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-
+import javax.ws.rs.QueryParam;
 /**
  * Root resource (exposed at "passwordhelloworld" path)
  */
@@ -19,10 +19,10 @@ public class PasswordHelloWorld {
      */
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public String getIt( @RequestParam("user") String username, @RequestParam("password") String password ) {
+    public String getIt( @QueryParam("user") String username, @QueryParam("password") String password ) {
         if(username.equals("user") && password.equals("password")){
             return "Hello " + username + "! I am secured with a username/password combo only!\n";
         }
-        return "Wrong username/password combo.\n";
+        return "Wrong username/password combination.\n";
     }
 }
