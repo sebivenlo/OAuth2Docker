@@ -12,7 +12,7 @@ During the development, a Google Doc was used to keep track of notes. This docum
 
 ## Setting up the database
 
-In order to set up the database run following commands:
+In order to set up the database run following commands after navigating to the project directory:
 
 Start a couchDB instance:
 ```
@@ -30,6 +30,10 @@ curl -X PUT http://127.0.0.1:5984/workshop_db
 ```
 
 Insert test data:
+```
+cd db
+```
+
 ```
 python db/script.py
 ```
