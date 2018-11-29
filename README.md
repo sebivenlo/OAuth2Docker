@@ -35,5 +35,5 @@ cd db
 ```
 
 ```
-python db/script.py
+python script.py
 ```
