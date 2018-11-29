@@ -28,3 +28,8 @@ Create a DB:
 ```
 curl -X PUT http://127.0.0.1:5984/workshop_db
 ```
+
+Insert test data:
+```
+python db/script.py
+```
