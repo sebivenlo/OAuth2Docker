@@ -11,7 +11,7 @@ The presentation slides of the workshop can be found [here](https://slides.com/s
 To follow this workshop, you will make use of a REST server. To run the server, clone or download this repository (we will look at the source code, however there is no reason to change it). In the folder "RESTWebServer", run the following commands to build and run the server as a docker image:
 ```
 docker build --tag=resourceserver .
-docker run -p 18080:8080 --network="host" -t -i resourceserver
+docker run --network="host" -t -i resourceserver
 ```
 
 ## Assignment 1: Starting simple
@@ -70,7 +70,7 @@ python script.py
 
 ## Assignment 4: Make use of OAuth2
 
-The last assignment should have given you a token as a result. Use this token to send requests to the following URLs, providing the "read" endpoint with a parameter "entry", for example 10, and the "write" endpoint with parameters for "name", "gender" and "email". Make sure you don't forget the "token" parameter! Also, try using a token that you know can't be right.
+The previous assignment should have given you a token as a result. Use this token to send requests to the following URLs, providing the "read" endpoint with a parameter "entry", for example 10, and the "write" endpoint with parameters for "name", "gender" and "email". Make sure you don't forget the "token" parameter! Also, try using a token that you know can't be right.
 ```
 http://localhost:8080/resourceserver/database/read
 http://localhost:8080/resourceserver/database/write
