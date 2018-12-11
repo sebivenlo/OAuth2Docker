@@ -33,7 +33,7 @@ public class HelloWorld {
 
         String name = SlackAuth.getSlackIdentityName(token);
 
-        if(SlackAuth.isSlackAuthenticated(token)){
+        if(!SlackAuth.isSlackAuthenticated(token)){
             return "Could not be authenticated.\n";
         }
 
