@@ -30,6 +30,9 @@ curl -X PUT http://127.0.0.1:5984/workshop_db
 ```
 
 Insert test data:
+
+Before we insert test data it is important that you have a python module called "requests" installed. You can find further instructions [here](https://stackoverflow.com/questions/17309288/importerror-no-module-named-requests) on how to install it.
+
 ```
 cd db
 ```
