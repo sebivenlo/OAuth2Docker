@@ -75,3 +75,4 @@ The previous assignment should have given you a token as a result. Use this toke
 http://localhost:8080/resourceserver/database/read
 http://localhost:8080/resourceserver/database/write
 ```
+When you have used the "write" endpoint, you should have received an ID in return. Use this ID as the "entry" parameter at the "read" endpoint to see if your data was stored.
